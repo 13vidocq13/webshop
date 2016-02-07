@@ -1,0 +1,41 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:GoodsElements/d:Controls/f:GoodsControl.ascx" caret="1202" fromTop="25" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:GoodsElements/d:Controls/f:GoodsEditControl.ascx" caret="0" fromTop="0" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:GoodsElements/d:Controls/f:ControlGoodsPreview.ascx" caret="0" fromTop="0" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:Administrator/f:GoodsAdd.aspx" caret="544" fromTop="7" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:AllUsers/f:GoodsPreview.aspx" caret="573" fromTop="6" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:AllUsers/f:Default.aspx.designer.cs" caret="1054" fromTop="6" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:AllUsers/f:Default.aspx" caret="164" fromTop="0" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:GoodsElements/d:Controls/f:GoodsPreviewForUsers.ascx" caret="3574" fromTop="19" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:GoodsElements/d:Controls/f:GoodsPreviewForUsers.ascx.cs" caret="606" fromTop="17" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:AllUsers/f:Default.aspx.cs" caret="3395" fromTop="25" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:Administrator/f:ManageGoodsInCategory.aspx.cs" caret="4134" fromTop="22" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:AllUsers/f:ExpandSearch.aspx.cs" caret="2757" fromTop="31" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/f:Site1.Master" caret="1608" fromTop="26" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:AllUsers/f:GoodsPreview.aspx.cs" caret="312" fromTop="3" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:Administrator/f:GoodsEdit.aspx.cs" caret="1331" fromTop="17" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:AllUsers/f:Order.aspx.cs" caret="2242" fromTop="17" />
+      <File id="009382D3-9816-450A-8C14-081918C08A6D/d:GoodsElements/d:Controls/f:OrderControlPreview.ascx.cs" caret="751" fromTop="23" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.6\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

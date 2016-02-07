@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="TestWork_Nix.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Style/Design_TestWork_Nix/bwdec2007/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            height: 78px;
+        }
+    </style>
+</head>
+<body>
+<form id="FormSiteMap" runat="server">
+  <table>
+    <tr>
+    <td valign="top" colspan="2" align="right" class="style2">
+        <%--<img src="App_Data/Technotreid.jpg" class="style2"/>--%>
+            <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+            <AnonymousTemplate>
+                [ <a href="AllUsers/Default.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                Welcome<span lang="en-us">,</span> <span class="bold"><span lang="en-us">&nbsp;</span><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+            </LoggedInTemplate>
+            </asp:LoginView>
+            <center>
+            <h1>
+                Web-Shop
+            </h1>
+         </center>
+      </td>
+    </tr>
+    <tr>
+       <td style="width:10%; vertical-align:top;">
+         <asp:TreeView ID="TreeViewMasterPage" runat="server" DataSourceID="SiteMapDataSource1" 
+               ShowLines="True" LineImagesFolder="~/TreeLineImages" ExpandDepth="1" 
+               ImageSet="Msdn" NodeIndent="10" >
+             <ParentNodeStyle Font-Bold="False" />
+             <HoverNodeStyle BackColor="#CCCCCC" BorderColor="#888888" BorderStyle="Solid" 
+                 Font-Underline="True" />
+             <SelectedNodeStyle BackColor="White" BorderColor="#888888" BorderStyle="Solid" 
+                 BorderWidth="1px" Font-Underline="False" HorizontalPadding="3px" 
+                 VerticalPadding="1px" />
+             <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                 HorizontalPadding="5px" NodeSpacing="1px" VerticalPadding="2px" />
+           </asp:TreeView>
+       </td>
+       <td style="vertical-align:top;" class="style3">
+         <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+       </td>
+    </tr>
+ </table>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+
+</form>
+
+<%--<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1">
+<br />
+<br />
+Default.aspx page(home)
+</asp:Content>--%>
+   <%--<form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Web-Shop
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="Pages/GeneralPages/StartPage.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+    </form>--%>
+</body>
+</html>

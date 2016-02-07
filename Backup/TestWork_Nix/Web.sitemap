@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/AllUsers/Default.aspx" title="Home Page"  description="Home Page">
+        <siteMapNode url="~/AllUsers/Register.aspx" title="Register Page"  description="Register Page" />
+        <siteMapNode url="~/AllUsers/Order.aspx" title="Order Page"  description="Order Page" />
+        <siteMapNode url="~/AllUsers/RegsteredUsers/UserProfile.aspx" title="Profile"  description="Profile" />
+      <siteMapNode url="~/AllUsers/RegsteredUsers/ExpandSearch.aspx" title="Search"  description="Search" />
+      <siteMapNode url="~/Administrator/AdministratorStartPage.aspx" title="Administration Page" description="Administration Page">
+        <siteMapNode url="~/Administrator/ManagementCategories.aspx" title="Category Administration" description="Category Administration" />
+      </siteMapNode>
+      <siteMapNode url="" description="sdxfvc" title="sdxfvc">
+        <siteMapNode url="" description="fvc" title="fvc">
+          <siteMapNode url="" description="rdfvb" title="rdfvb" />
+          <siteMapNode url="" description="gdfgvb" title="gdfgvb" />
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

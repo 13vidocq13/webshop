@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{009382D3-9816-450A-8C14-081918C08A6D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestWork_Nix</RootNamespace>
+    <AssemblyName>TestWork_Nix</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.1.0.39271, Culture=neutral, PublicKeyToken=3a9cab8f8d22bfb7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BotDetect, Version=3.0.0.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Lanapsoft\BotDetect 3 CAPTCHA Component\Asp.Net\v3.5\BotDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=1.1.0.685, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MSCaptcha, Version=1.0.2832.11804, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Linq, Version=1.1.0.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\fluentnhibernate-1.1\NHibernate.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\recaptcha-dotnet-1.0.1.0-binary\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="ServerControl1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ServerControl1\ServerControl1\bin\Release\ServerControl1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllUsers\Default.aspx" />
+    <Content Include="Style\Design_TestWork_Nix\bwdec2007\images\li.gif" />
+    <Content Include="Style\Design_TestWork_Nix\bwdec2007\images\rss.gif" />
+    <Content Include="Style\Design_TestWork_Nix\bwdec2007\images\sponsor.jpg" />
+    <Content Include="Style\Design_TestWork_Nix\bwdec2007\index.html" />
+    <Content Include="Style\Design_TestWork_Nix\bwdec2007\license.txt" />
+    <Content Include="Style\Design_TestWork_Nix\bwdec2007\style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\AdministratorStartPage.aspx.cs">
+      <DependentUpon>AdministratorStartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AdministratorStartPage.aspx.designer.cs">
+      <DependentUpon>AdministratorStartPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GoodsAdd.aspx.cs">
+      <DependentUpon>GoodsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GoodsAdd.aspx.designer.cs">
+      <DependentUpon>GoodsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GoodsEdit.aspx.cs">
+      <DependentUpon>GoodsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GoodsEdit.aspx.designer.cs">
+      <DependentUpon>GoodsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\KeyGenerate.aspx.cs">
+      <DependentUpon>KeyGenerate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\KeyGenerate.aspx.designer.cs">
+      <DependentUpon>KeyGenerate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ManageGoodsInCategory.aspx.cs">
+      <DependentUpon>ManageGoodsInCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ManageGoodsInCategory.aspx.designer.cs">
+      <DependentUpon>ManageGoodsInCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ManageRoles.aspx.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ManageRoles.aspx.designer.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ReportView.aspx.cs">
+      <DependentUpon>ReportView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ReportView.aspx.designer.cs">
+      <DependentUpon>ReportView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsers\GoodsPreview.aspx.cs">
+      <DependentUpon>GoodsPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllUsers\GoodsPreview.aspx.designer.cs">
+      <DependentUpon>GoodsPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GetBigImage.aspx.cs">
+      <DependentUpon>GetBigImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GetBigImage.aspx.designer.cs">
+      <DependentUpon>GetBigImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GoodsEditControl.ascx.cs">
+      <DependentUpon>GoodsEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GoodsEditControl.ascx.designer.cs">
+      <DependentUpon>GoodsEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GoodsPreviewForUsers.ascx.cs">
+      <DependentUpon>GoodsPreviewForUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GoodsPreviewForUsers.ascx.designer.cs">
+      <DependentUpon>GoodsPreviewForUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\ImageHelp.aspx.cs">
+      <DependentUpon>ImageHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\ImageHelp.aspx.designer.cs">
+      <DependentUpon>ImageHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ManagementCategories.aspx.cs">
+      <DependentUpon>ManagementCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ManagementCategories.aspx.designer.cs">
+      <DependentUpon>ManagementCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsers\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsers\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsers\ExpandSearch.aspx.cs">
+      <DependentUpon>ExpandSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllUsers\ExpandSearch.aspx.designer.cs">
+      <DependentUpon>ExpandSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsers\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllUsers\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categoties\Controls\TreeViewCategoriesControl.ascx.cs">
+      <DependentUpon>TreeViewCategoriesControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoties\Controls\TreeViewCategoriesControl.ascx.designer.cs">
+      <DependentUpon>TreeViewCategoriesControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GoodsPreview.aspx.cs">
+      <DependentUpon>GoodsPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GoodsPreview.aspx.designer.cs">
+      <DependentUpon>GoodsPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\ControlGoodsPreview.ascx.cs">
+      <DependentUpon>ControlGoodsPreview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\ControlGoodsPreview.ascx.designer.cs">
+      <DependentUpon>ControlGoodsPreview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GoodsControl.ascx.cs">
+      <DependentUpon>GoodsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\GoodsControl.ascx.designer.cs">
+      <DependentUpon>GoodsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\ListGoodsControl.ascx.cs">
+      <DependentUpon>ListGoodsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\ListGoodsControl.ascx.designer.cs">
+      <DependentUpon>ListGoodsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\OrderControlPreview.ascx.cs">
+      <DependentUpon>OrderControlPreview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsElements\Controls\OrderControlPreview.ascx.designer.cs">
+      <DependentUpon>OrderControlPreview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AllUsers\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllUsers\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterElements\Controls\ProfileControl.ascx.cs">
+      <DependentUpon>ProfileControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterElements\Controls\ProfileControl.ascx.designer.cs">
+      <DependentUpon>ProfileControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterElements\Controls\RegisterControl.ascx.cs">
+      <DependentUpon>RegisterControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterElements\Controls\RegisterControl.ascx.designer.cs">
+      <DependentUpon>RegisterControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsers\RegsteredUsers\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllUsers\RegsteredUsers\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\AdministratorStartPage.aspx" />
+    <Content Include="Administrator\ManagementCategories.aspx" />
+    <Content Include="AllUsers\ExpandSearch.aspx" />
+    <Content Include="AllUsers\Order.aspx" />
+    <Content Include="AllUsers\Register.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="Style\matrix.css" />
+    <Content Include="AllUsers\RegsteredUsers\UserProfile.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Logic_Layer\Business_Logic_Layer.csproj">
+      <Project>{1EA73A00-D7B4-400D-9215-3E557AA08073}</Project>
+      <Name>Business_Logic_Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntitiesAndMapping\EntitiesAndMapping.csproj">
+      <Project>{1D99D430-8E10-4F0B-A8DA-7F8B508DF163}</Project>
+      <Name>EntitiesAndMapping</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\GoodsAdd.aspx" />
+    <Content Include="Administrator\GoodsEdit.aspx" />
+    <Content Include="Administrator\KeyGenerate.aspx" />
+    <Content Include="Administrator\ManageGoodsInCategory.aspx" />
+    <Content Include="Administrator\ManageRoles.aspx" />
+    <Content Include="Administrator\ReportView.aspx" />
+    <Content Include="AllUsers\GoodsPreview.aspx" />
+    <Content Include="AllUsers\text-calendar_mini.png" />
+    <Content Include="App_Data\Technotreid.jpg" />
+    <Content Include="GoodsElements\Controls\GetBigImage.aspx" />
+    <Content Include="GoodsElements\Controls\GoodsEditControl.ascx" />
+    <Content Include="GoodsElements\Controls\GoodsPreviewForUsers.ascx" />
+    <Content Include="GoodsElements\Controls\ImageHelp.aspx" />
+    <Content Include="Categoties\Controls\TreeViewCategoriesControl.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Administrator\GoodsPreview.aspx" />
+    <Content Include="GoodsElements\Controls\ControlGoodsPreview.ascx" />
+    <Content Include="GoodsElements\Controls\GoodsControl.ascx" />
+    <Content Include="GoodsElements\Controls\ListGoodsControl.ascx" />
+    <Content Include="GoodsElements\Controls\OrderControlPreview.ascx" />
+    <Content Include="RegisterElements\Controls\ProfileControl.ascx" />
+    <Content Include="RegisterElements\Controls\RegisterControl.ascx" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55267</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
